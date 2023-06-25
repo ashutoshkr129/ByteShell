@@ -28,10 +28,10 @@ To compile and execute ByteShell:
 
 Once you have launched ByteShell, you can start interacting with it by entering commands at the prompt. Here are some examples of command usage:
 
-- **System Commands**: You can execute system commands like `ls`, `cat`, `grep`, etc., by typing the command name followed by any required arguments.   
+- **System Commands**: You can execute system commands like `ls`, `cat`, `pwd`, etc., by typing the command name followed by any required arguments.   
     * `ByteShell> ls`
     * `ByteShell> cat file.txt`   
-    * `ByteShell> grep pattern file.txt`
+    * `ByteShell> pwd`
 
 
 
