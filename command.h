@@ -2,6 +2,5 @@
 #define COMMAND_H
 
 void execute_system_command(const char* command, char* const arguments[]);
-void execute_built_in_command(const char* command, char* const arguments[]);
 
 #endif /* COMMAND_H */

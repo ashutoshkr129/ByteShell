@@ -32,22 +32,34 @@ int main() {
         }
 
         char** tokens = tokenize_input(input);
-
+        
         if (tokens[0] != NULL) {
-            if (strcmp(tokens[0], "ls") == 0) {
-                execute_system_command("ls", tokens);
-            } else if (strcmp(tokens[0], "help") == 0) {
-                execute_help_command();
-            } else if (strcmp(tokens[0], "exit") == 0) {
-                execute_exit_command();
-                break;
-            } else if (strcmp(tokens[0], "cd") == 0) {
-                execute_cd_command(tokens);
-            } else if (strcmp(tokens[0], "history") == 0) {
-                execute_history_command();
-            } else {
-                printf("Command not found: %s\n", tokens[0]);
-            }
+            execute_system_command(tokens[0], tokens);
+
+            // if (strcmp(tokens[0], "ls") == 0) {
+            //     execute_system_command("ls", tokens);
+            // } else if (strcmp(tokens[0], "checkpid") == 0) {
+            //     execute_system_command("checkpid", tokens);
+            // } else if (strcmp(tokens[0], "kill") == 0) {
+            //     execute_system_command("kill", tokens);
+            // } else if (strcmp(tokens[0], "echo") == 0) {
+            //     execute_system_command("echo", tokens);
+            // } else if (strcmp(tokens[0], "help") == 0) {
+            //     execute_help_command();
+            // } else if (strcmp(tokens[0], "exit") == 0) {
+            //     execute_exit_command();
+            //     break;
+            // } else if (strcmp(tokens[0], "cd") == 0) {
+            //     execute_cd_command(tokens);
+            // } else if (strcmp(tokens[0], "history") == 0) {
+            //     execute_history_command();
+            // } else if (strcmp(tokens[0], "alias") == 0) {
+            //     execute_alias_command(tokens);
+            // } else {
+            //     // printf("Command not found: %s\n", tokens[0]);
+            //     execute_system_command(tokens[0], tokens);
+            // }
+            
         }
 
         free_tokens(tokens);
