@@ -1,6 +1,6 @@
 # ByteShell: A Custom Shell
 
-    ByteShell is a custom shell implementation that provides a command-line interface to interact with the operating system. It allows users to execute various commands, navigate directories, and perform basic shell operations.
+ByteShell is a custom shell implementation that provides a command-line interface to interact with the operating system. It allows users to execute various commands, navigate directories, and perform basic shell operations.
 
 ## Features
 
